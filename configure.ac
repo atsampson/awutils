@@ -1,0 +1,13 @@
+AC_PREREQ(2.59)
+AC_INIT([awutils], [0])
+AC_CONFIG_SRCDIR([awflash.c])
+
+AM_INIT_AUTOMAKE([foreign])
+
+AC_PROG_CC
+AC_PROG_INSTALL
+
+PKG_CHECK_MODULES([LIBUSB], [libusb])
+
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
